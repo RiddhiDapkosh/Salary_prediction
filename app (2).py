@@ -17,7 +17,7 @@ st.write('Enter the details below to predict the salary.')
 #       In a real application, you would load/re-create your LabelEncoders.
 
 rating = st.slider('Rating', min_value=0.0, max_value=5.0, value=3.5, step=0.1)
-company_name = st.selectbox('Company Name', companies)
+company_name = st.selectbox('Company Name', Company)
 job_title = st.number_input('Job Title (Encoded)', min_value=0, value=200)
 salaries_reported = st.number_input('Salaries Reported', min_value=1, value=5)
 location = st.number_input('Location (Encoded)', min_value=0, value=10)
