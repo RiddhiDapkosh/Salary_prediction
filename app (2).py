@@ -12,7 +12,7 @@ with open('linear_regression_model.pkl', 'rb') as file:
 # Load the original dataset to get categorical values for encoding
 # Assuming the CSV is available at this path relative to the Streamlit app or uploaded
 try:
-    original_df = pd.read_csv('/content/Salary_Dataset_DataScienceLovers.csv') # Updated path
+    original_df = pd.read_csv('Salary_Dataset_DataScienceLovers.csv') # Updated path
 except FileNotFoundError:
     st.error("Error: 'Salary_Dataset_DataScienceLovers.csv' not found. Please ensure it's in the same directory as app.py or the path is correct.")
     st.stop()
